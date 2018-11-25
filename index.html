@@ -10,7 +10,7 @@
     <meta name="author" content="">
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon.ico">
-    <title>ETH hedge token</title>
+    <title>ETH 헤지 토큰</title>
     <!-- Bootstrap Core CSS -->
     <link href="../assets/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 	<link href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous" rel="stylesheet">
@@ -44,20 +44,20 @@
                         <div class="collapse navbar-collapse hover-dropdown font-14 ml-auto" id="h6-info">
                             <ul class="navbar-nav ml-auto">
                                 <li class="nav-item"> 
-                                    <a class="nav-link" href="#invest">Invest</a>
+                                    <a class="nav-link" href="#invest">투자</a>
                                 </li>
                                 <li class="nav-item"> 
-                                    <a class="nav-link" href="#yourBalance">Profit</a>
+                                    <a class="nav-link" href="#yourBalance">수익</a>
                                 </li>
 								<li class="nav-item"> 
-                                    <a class="nav-link" href="#howWork">Concept</a>
+                                    <a class="nav-link" href="#howWork">컨셉</a>
                                 </li>
 								<li class="nav-item"> 
-                                    <a class="nav-link" href="#faq">F.A.Q.</a>
+                                    <a class="nav-link" href="#faq">자주하는 질문</a>
                                 </li>
                             </ul>
                             <div class="act-buttons">
-                                <a href="https://t.me/ethedged" class="btn btn-md m-t-30 btn-info font-14" target=_blank><i class="fa fa-paper-plane fa-lg"></i> Telegram</a>
+                                <a href="https://t.me/ethedged" class="btn btn-md m-t-30 btn-info font-14" target=_blank><i class="fa fa-paper-plane fa-lg"></i>텔레그램</a>
                             </div>
                         </div>
                     </nav>
@@ -86,37 +86,37 @@
                             <div class="col-lg-10 col-md-8 align-self-center text-center" data-aos="fade-up" data-aos-duration="1200">
 				<br/>
                                 <h1 class="title">ETH</h1>								
-								<h2 class="subtitle" style="margin-top: -50px;">hedge token</h2>
+								<h2 class="subtitle" style="margin-top: -50px;">헤지 토큰</h2>
 								<br/>
-								<p class="font-light text-white">Decentralized exchange concept. DAPP ERC-20 compatibility.<br/> We use small assets part to hedge your risks on Bitmex (short ETH) with leverage<br/>and return dividents to this contract. Lifetime refferals.</p>
+								<p class="font-light text-white">분산 교환소 개념. 댑 ERC-20 호환.<br/> 우리는 비트맥스에서 이더리움 단타(short ETH)의 이점을 사용하여 <br/>귀하의 위험을 헤지하기 위해 작은 자산 일부를 사용하고 그수익을 이 계약에 투자합니다.  <br/>평생 추천제.</p>
 							</div>							
 							<div class="col-lg-8 col-md-6 align-self-center text-center">
 								<hr style="border-top: 1px solid #fff;">
-								<h2 class="subtitle font-light">Invest to hedge</h4>
-								<p id="invest" class="text-white">Total token supply in : <strong id="supply">0.0</strong> tokens</p>
+								<h2 class="subtitle font-light">헤지에 투자하기</h2>
+								<p id="invest" class="text-white">총토큰 공급량 : <strong id="supply">0.0</strong> 토큰</p>
 								<form class="row text-white">
 									<div class="form-group col-md-4">
-										<label for="token_price">Current token price:</label>
+										<label for="token_price">현 토큰 시세:</label>
 										<h4 class="subtitle" id="token_price">1 EHT = <a class="buyPrice" id='buyPrice'>0</a></h4>
 									</div>
 									<div class="form-group col-md-4">
-										<label for="inputWallet">Estimated tokens for purchase: <a class="approx" id='tokenamountbuy'>0.00</a></label>
+										<label for="inputWallet">구매 예상 토큰수: <a class="approx" id='tokenamountbuy'>0.00</a></label>
 										<input type="number" class="form-control " id="ethamountbuy" oninput='UpdateTokenAmount()' placeholder="0">
 									</div>
 									<div class="form-group col-md-4">
-										<label for="ethInContract">Contract value</label>
+										<label for="ethInContract">계약 잔고</label>
 										<h4 class="subtitle"><a id="balance" class="text-white">0.0000</a> <em class="fab fa-ethereum"></em></h4>
 									</div>
 									<div class="col-md-12">
-										<button type="submit" class="btn btn-info" onclick="buy()">Buy tokens</button>
+										<button type="submit" class="btn btn-info" onclick="buy()">토큰 구매</button>
 									</div>
 									<div class="col-md-12">
 										<br/>
 										<p>
-											Contract address: <a href="https://etherscan.io/address/0xfc81655585F2F3935895C1409b332AB797D90B33" id='contractcode' target="_blank">0xfc81655585F2F3935895C1409b332AB797D90B33</a>
+											계약 주소: <a href="https://etherscan.io/address/0xfc81655585F2F3935895C1409b332AB797D90B33" id='contractcode' target="_blank">0xfc81655585F2F3935895C1409b332AB797D90B33</a>
 										</p>
 										<p>
-											<span>Masternode</span>: <span id="masternode">n/a</span>
+											<span>마스터 노드</span>: <span id="masternode">n/a</span>
 										</p>
 									</div>									
 								</form>
@@ -137,27 +137,27 @@
                             <div class="col-md-6 text-center">								
                                 <div class="row">
 									<div class="col-md-6">
-										<h4 class="title font-bold">Sell tokens</h4>
+										<h4 class="title font-bold">토큰 판매</h4>
 										<p class="subtitle">You can currently sell <span id="UserTokens">0 </span> EHT</p>
 										<h5 class="text-center" id='sellPrice'>0 <em class="fab fa-ethereum"></em></h5>
 										<br/>
 									</div>
 									<div class="col-md-6">
-										<h4 class="title font-bold">Currently available</h4>
+										<h4 class="title font-bold">예상 이더</h4>
 										<h5 class="text-center" id="UserTokens"></h5>
-										<p class="subtitle">Ethereum: ~<a id="userestimate">0.0000</a><em class="fab fa-ethereum"></em></p>
+										<p class="subtitle">이더리움: ~<a id="userestimate">0.0000</a><em class="fab fa-ethereum"></em></p>
 									</div>
 									<div class="col-md-4 col-xs-12">
-										<button class="btn btn-outline-info" id="setMax" onclick="SetMaxSellTokens()" type="button" onclick="return false;" value="Max">Maximum</button>
+										<button class="btn btn-outline-info" id="setMax" onclick="SetMaxSellTokens()" type="button" onclick="return false;" value="Max">최대</button>
 									</div>
 									<div class="col-md-4 col-xs-12">
 										<input class="form-control" id="tokenamountsell" type="number" maxlength="12" minlength="1" min="0" max="999999" name="sell-amount" value="0" oninput='UpdateETHAmount()'>
 									</div>
 									<div class="col-md-4 col-xs-12">
-										<button class="btn btn-outline-info" onclick="sell()"><i class="right arrow icon"></i>Sell tokens</button>
+										<button class="btn btn-outline-info" onclick="sell()"><i class="right arrow icon"></i>토큰 판매</button>
 									</div>
 									<div class="col-md-12">
-										<h4 class="title font-bold">You will receive: <a class="approx" id="ethamountsell">0.0000</a> <em class="fab fa-ethereum"></em></h4>
+										<h4 class="title font-bold">받게될 금액: <a class="approx" id="ethamountsell">0.0000</a> <em class="fab fa-ethereum"></em></h4>
 									</div>
 								</div>
                             </div>
@@ -166,20 +166,20 @@
 							<div class="col-md-4 text-center">
 								<div class="row">
 									<div class="col-md-12 form-group">
-										<h4 class="title font-bold">Transfer your tokens</h4>
-										<p class="subtitle">You can use this form to transfer your EHT tokens to another wallet. Please remember that this action is not reversible!</p>
+										<h4 class="title font-bold">토큰 전송</h4>
+										<p class="subtitle">귀하의 EHT토큰을 다른 지갑으로 전송할 수 있습니다. 일단 전송이 완료되면 되돌릴 수 없습니다!</p>
 									</div>
 									<div class="col-md-6 form-group">
-										<label for="transferAddress">Recipient address</label>
+										<label for="transferAddress">수신자 주소</label>
 										<input class="form-control" id="tokenaddress" type="text" name="transferAddress">
 									</div>
 									<div class="col-md-6 form-group">
-										<label for="transferTokenCount">Amount of tokens</label>
+										<label for="transferTokenCount">토큰 수</label>
 										<input class="form-control" id="tokenamounttransfer" type="number" maxlength="12" minlength="1" min="0" name="transferTokenCount" placeholder="0.00">
 									</div>									
 									<div class="col-md-12 form-group">
 										<br/>
-										<button class="btn btn-outline-info" onclick="transfer()"><i class="right arrow icon"></i>Transfer</button>
+										<button class="btn btn-outline-info" onclick="transfer()"><i class="right arrow icon"></i>전송</button>
 									</div>
 								</div>
                             </div>
@@ -198,13 +198,13 @@
                         <div class="row justify-content-center ">
                             <!-- Column -->
                             <div class="col-md-6 align-self-center text-center" data-aos="fade-down" data-aos-duration="1200">
-								<h1 id="yourBalance" class="title">Your profitability</h1>
+								<h1 id="yourBalance" class="title">수익성</h1>
 								<br/>
-								<h2>So far you have accumulated</h2>
+								<h2 class="subtitle">귀하의 현재 누적액</h2>
 								<p class="title font-bold text-center"><span id="reinvest">0.0000</span> <em class="fab fa-ethereum"></em></p>
-								<a id="withdraw" onclick="withdraw()" class="col-md-6 btn btn-outline-light btn-rounded btn-md btn-arrow m-t-20" data-toggle="collapse" href=""><span>Withdraw <i class="ti-arrow-right"></i></span></a>
+								<a id="withdraw" onclick="withdraw()" class="col-md-6 btn btn-outline-light btn-rounded btn-md btn-arrow m-t-20" data-toggle="collapse" href=""><span>출금 <i class="ti-arrow-right"></i></span></a>
 								<p class="title font-bold text-center"><span id="tokenreinvest">0.00</span> EHT</p>
-								<a id="reinvest" onclick="reinvest()" class="col-md-6 btn btn-outline-light btn-rounded btn-md btn-arrow m-t-20 text-center" data-toggle="collapse" href=""><span>Reinvest <i class="ti-arrow-right"></i></span></a>
+								<a id="reinvest" onclick="reinvest()" class="col-md-6 btn btn-outline-light btn-rounded btn-md btn-arrow m-t-20 text-center" data-toggle="collapse" href=""><span>재투자 <i class="ti-arrow-right"></i></span></a>
                             </div>
                             <!-- Column -->
 
@@ -223,7 +223,7 @@
                         <div class="row justify-content-center ">
                             <!-- Column -->
                             <div class="col-md-11 align-self-center text-center" data-aos="fade-right" data-aos-duration="1200">
-                                <h1 class="title">Your masternode referral link</h1>
+                                <h1 class="title">귀하의 마스타노드 추천링크</h1>
 								<a class="btn btn-outline-info" href="/" id="masternodeLink">null</a>
                             </div>
                             <!-- Column -->
@@ -243,10 +243,10 @@
                             <div class="container">
                                 <div class="row">
                                     <div class="col-md-7 col-lg-5 align-self-center" data-aos="fade-right" data-aos-duration="1500">
-                                        <h2 id="howWork" class="title font-bold">How does it work?</h2>
-                                        <p class="m-t-40 m-b-30">Our service works as exchange walt for securing your mining assets in form of decentralized fully automated (EHT) token. Token is built to function without any 2nd or 3rd party control. All tokens are visible on main network and traceable for full transparency with no governance or overseeing institution involved.</p>
-					<p class="m-t-40 m-b-30">As for token holder you will earn shared amount of every transformation to EHT token or withdraw that is proportional your token amount vs total tokens in circulation. All fees conducted from any users on the platform are fully paid out to token holders without any fee.</p>
-					<p class="m-t-40 m-b-30">Also to reward active community members whom have atleast 50.00 EHT tokens, we have an lifetime affiliate program were using link you can invite your relatives, friends or event strangers to the platform. For any new users that joins the platform with your referral link you will receive 15% of every investment fees conducted from their investment forever.</p>
+                                        <h2 id="howWork" class="title font-bold">어떻게 작동합니까?</h2>
+                                        <p class="m-t-40 m-b-30">당사의 서비스는 귀하의 채굴자산을 분산형 완전 자동(EHT) 토큰의 형태로 확보하기위한 교환소로 사용됩니다. 토큰은 제삼자의 제어없이 작동하도록 만들어졌습니다. 모든 토큰은 메인네트워크에서 볼 수 있으며 관리 또는 감독기관이 필요하지 않은 상태에서 완전히 투명하게 추적할 수 있습니다.</p>
+					<p class="m-t-40 m-b-30">토큰 보유자는 EHT토큰으로 변환할 때마다 공유된 금액을 받거나 귀하의 토큰보유액과 토큰의 총액에 비례하여 인출됩니다. 플랫폼상에서 발생한 모든 사용자 수수료는 무료로 토큰 보유자에게 배분됩니다.</p>
+					<p class="m-t-40 m-b-30">또한 최소 50개의 EHT 토큰이있는 활동중인 커뮤니티 회원에게 보상을 제공하기 위해 평생 제휴 프로그램을 사용하여 지인 또는 낯선 사람도 플랫폼에 초대 할 수있는 링크를 사용합니다. 귀하의 소개링크와 함께 플랫폼에 가입하는 신규사용자의 경우 투자할 때마다 투자비용의 15%를 평생 받게됩니다.</p>
                                     </div>
                                     <div class="col-md-5 col-lg-6 align-self-center ml-auto" data-aos="fade-left" data-aos-duration="1500">
                                         <img src="../assets/images/form-banners/banner1/banner-img.png" alt="We are Digital Agency" class="img-fluid" />
@@ -266,63 +266,65 @@
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-md-8 text-center">
-                                <h1 id="faq" class="title font-bold">F.A.Q.</h1>
-                                <h6 class="subtitle">On daily basis we receive tons of questions about the platform. Here are some common answers to most of them.</h6>
+                                <h1 id="faq" class="title font-bold">자주하는 질문</h1>
+                                <h6 class="subtitle">우리는 매일 플랫폼에 대한 수많은 질문을 받습니다. 다음은 그에대한 공통적인 대답입니다.</h6>
 								<br/>							
 								
 								<div class="accordion-s2" id="accordion-1">
 									<div class="card animated fadeInUp active" data-animate="fadeInUp" data-delay=".1 animated" style="visibility: visible;">
 										<div class="card-header">
 											<h5>
-												<a data-toggle="collapse" data-target="#collapse-1-1" locale="faq_exact_amounts" class="collapsed" aria-expanded="false">What are the exact fee amounts?</a>
+												<a data-toggle="collapse" data-target="#collapse-1-1" locale="faq_exact_amounts" class="collapsed" aria-expanded="false">정확한 수수료는 얼마입니까?</a>
 											</h5>
 										</div>
 										<div id="collapse-1-1" class="collapse show" data-parent="#accordion-1" style="">
 											<div class="card-body">
-												<p locale="faq_exact_amount_a">Input fee: 22% from investment. Included:
-												    <br>&nbsp; - 5% Return to token holders
-												    <br>&nbsp; - 2% Marketing and support costs
-												    <br>&nbsp; - 15% Trade capital fee. Use to do profit on bitmex and pay dividends back, if success. Safe investment style.
+												<p locale="faq_exact_amount_a">진입료: 22%. 다음을 포함합니다:
+												    <br>&nbsp; - 5% 토큰 소지자에게 배분 
+												    <br>&nbsp; - 2% 마케팅 및 유지비용
+												    <br>&nbsp; - 15% 트레이드 자본 비용. Bitmex에서 이익을 얻고 성공할 경우 배당금을 다시 지불하는데 사용. 안전한 투자 스타일.
 												    <br>
-												    <br>Withdraw fee: 3% from assets
-												    <br>Transfer fee: 1% from value transfered
-												    <br>Referral profit: 15% from guests investment fees (lifetime)<br></p>
+												    <br>인출 수수료: 3%
+												    <br>송금 수수료: 1%
+												    <br>추천 이익: 15% (평생)<br></p>
 											</div>
 										</div>
 									</div>
 									<div class="card animated fadeInUp" data-animate="fadeInUp" data-delay=".2" style="visibility: visible; animation-delay: 0.2s;">
 										<div class="card-header">
 											<h5>
-												<a class="collapsed" data-toggle="collapse" data-target="#collapse-1-2" locale="faq_how_much">What is Metamask?</a>
+												<a class="collapsed" data-toggle="collapse" data-target="#collapse-1-2" locale="faq_how_much">메타메스크란?</a>
 											</h5>
 										</div>
 										<div id="collapse-1-2" class="collapse" data-parent="#accordion-1">
 											<div class="card-body">
-												<p locale="faq_how_much_a">MetaMask is a bridge that allows you to visit the distributed web of tomorrow in your browser today. It allows you to run Ethereum dApps right in your browser without running a full Ethereum node.
-												    <br><br>You can install Metamask here: <a href=https://metamask.io target=_blank>https://metamask.io</a>
-												    <br>Step 2: Click “Add to Chrome” to Install MetaMask as Google Chrome extension.
-												    <br>Step 3: Click “Add Extension” to confirm and MetaMask will be added
-												    <br>You can see that MetaMask is added by the little fox logo that shows up on the top right corner</p>
+												<p locale="faq_how_much_a">메타메스크는 오늘날 브라우저에서 분산앱을 방문 할 수있게 해주는 교각입니다. 이를 통해 전체 이더리움 노드를 실행하지 않고도 브라우저에서 이더리움 분산앱을 실행할 수 있습니다.
+												    <br><br>1단계: 여기서 메타메스크를 설치할 수 있습니다: 
+                                                    <a href=https://metamask.io target=_blank>https://metamask.io</a>
+												    <br>2단계: "크롬에 추가"를 클릭하여 메타메스크를 구글 크롬 확장프로그램으로 설치합니다.
+												    <br>3단계: '익스텐션 추가'를 클릭하여 확인하면 메타메스크가 추가됩니다.
+												    <br>브라우저의 오른쪽 상단 모서리에 작은 여우모양의 로고가 나타나면 메타메스크가 추가된 것을 확인할 수 있습니다.</p>
 											</div>
 										</div>
 									</div>
 									<div class="card animated fadeInUp" data-animate="fadeInUp" data-delay=".3" style="visibility: visible; animation-delay: 0.3s;">
 										<div class="card-header">
 											<h5>
-												<a class="collapsed" data-toggle="collapse" data-target="#collapse-1-3" locale="faq_how_much">How much will I earn?</a>
+												<a class="collapsed" data-toggle="collapse" data-target="#collapse-1-3" locale="faq_how_much">얼마를 벌 수 있습니까?</a>
 											</h5>
 										</div>
 										<div id="collapse-1-3" class="collapse" data-parent="#accordion-1">
 											<div class="card-body">
-												<p locale="faq_how_much_a">All profits are related to amount of ETH you transform in correlation with token market activity. As more and more mining asets are stored into platform you gain certain % of that amount. Also taking in account every withdraw is profitable for you as long as you have tokens.
-												    <br>On bitmex, we pay 50% of profit to contract holders, 25% - manage fee and 25% - reinvest</p>
+												<p locale="faq_how_much_a">모든 수익은 토큰시장 활동과 관련하여 변환하는 ETH 금액과 연관됩니다. 점점 더 많은 채굴 애셋이 플랫폼에 저장되므로 그 양의 일정 비율을 확보하게 됩니다. 또한 모든 인출을 고려하면 토큰을 가지고 있는한 수익성이 있습니다.
+                                                <br> 비트멕스는 계약자에게 50%의 이익을, 25%는 수수료를, 25%는 재투자 비용으로 지불합니다.
+												</p>
 											</div>
 										</div>
 									</div>
 									<div class="card animated fadeInUp" data-animate="fadeInUp" data-delay=".4" style="visibility: visible; animation-delay: 0.4s;">
 										<div class="card-header">
 											<h5>
-												<a class="collapsed" data-toggle="collapse" data-target="#collapse-1-4" locale="faq_how_much">Are my assets safe ?</a>
+												<a class="collapsed" data-toggle="collapse" data-target="#collapse-1-4" locale="faq_how_much">내자산은 안전합니까?</a>
 											</h5>
 										</div>
 										<div id="collapse-1-4" class="collapse" data-parent="#accordion-1">
