@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon.ico">
+    <title>ETH hedge token</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="../assets/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous" rel="stylesheet">
+    <!-- This page CSS -->
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/index-landingpage/landing-page.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="">
+    
+    <!-- ============================================================== -->
+    <!-- Main wrapper - style you can find in pages.scss -->
+    <!-- ============================================================== -->
+    <div id="main-wrapper">
+        <!-- ============================================================== -->
+        <!-- Top header  -->
+        <!-- ============================================================== -->
+        <div class="topbar" id="top">
+            <div class="header6">
+                <div class="container po-relative">
+                    <nav class="navbar navbar-expand-lg h6-nav-bar">
+                        <a href="/" class="navbar-brand"><img src="../assets/images/logos/white-text-eht.png" alt="wrapkit" /></a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#h6-info" aria-controls="h6-info" aria-expanded="false" aria-label="Toggle navigation"><span class="ti-menu"></span></button>
+                        <div class="collapse navbar-collapse hover-dropdown font-14 ml-auto" id="h6-info">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item"> 
+                                    <a class="nav-link" href="#invest">Invest</a>
+                                </li>
+                                <li class="nav-item"> 
+                                    <a class="nav-link" href="#yourBalance">Profit</a>
+                                </li>
+								<li class="nav-item"> 
+                                    <a class="nav-link" href="#howWork">Concept</a>
+                                </li>
+								<li class="nav-item"> 
+                                    <a class="nav-link" href="#faq">F.A.Q.</a>
+                                </li>
+                            </ul>
+                            <div class="act-buttons">
+                                <a href="https://t.me/ethedged" class="btn btn-md m-t-30 btn-info font-14" target=_blank><i class="fa fa-paper-plane fa-lg"></i> Telegram</a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- ============================================================== -->
+        <!-- Top header  -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Page wrapper  -->
+        <!-- ============================================================== -->
+        <div class="page-wrapper">
+            <!-- ============================================================== -->
+            <!-- Container fluid  -->
+            <!-- ============================================================== -->
+            <div class="container-fluid">
+                <!-- ============================================================== -->
+                <!-- Static Slider 10  https://i.ytimg.com/vi/-MKapbz0GIo/maxresdefault.jpg -->
+                <!-- ============================================================== -->
+                <div class="static-slider-head" style="background-image:url(../assets/images/landingpage/banner-bg-1.jpg)">					
+                    <div class="container">
+                        <!-- Row  -->
+                        <div class="row justify-content-center">
+                            <!-- Column -->
+                            <div class="col-lg-10 col-md-8 align-self-center text-center" data-aos="fade-up" data-aos-duration="1200">
+				<br/>
+                                <h1 class="title">ETH</h1>								
+								<h2 class="subtitle" style="margin-top: -50px;">hedge token</h2>
+								<br/>
+								<p class="font-light text-white">Decentralized exchange concept. DAPP ERC-20 compatibility.<br/> We use small assets part to hedge your risks on Bitmex (short ETH) with leverage<br/>and return dividents to this contract. Lifetime refferals.</p>
+							</div>							
+							<div class="col-lg-8 col-md-6 align-self-center text-center">
+								<hr style="border-top: 1px solid #fff;">
+								<h2 class="subtitle font-light">Invest to hedge</h4>
+								<p id="invest" class="text-white">Total token supply in : <strong id="supply">0.0</strong> tokens</p>
+								<form class="row text-white">
+									<div class="form-group col-md-4">
+										<label for="token_price">Current token price:</label>
+										<h4 class="subtitle" id="token_price">1 EHT = <a class="buyPrice" id='buyPrice'>0</a></h4>
+									</div>
+									<div class="form-group col-md-4">
+										<label for="inputWallet">Estimated tokens for purchase: <a class="approx" id='tokenamountbuy'>0.00</a></label>
+										<input type="number" class="form-control " id="ethamountbuy" oninput='UpdateTokenAmount()' placeholder="0">
+									</div>
+									<div class="form-group col-md-4">
+										<label for="ethInContract">Contract value</label>
+										<h4 class="subtitle"><a id="balance" class="text-white">0.0000</a> <em class="fab fa-ethereum"></em></h4>
+									</div>
+									<div class="col-md-12">
+										<button type="submit" class="btn btn-info" onclick="buy()">Buy tokens</button>
+									</div>
+									<div class="col-md-12">
+										<br/>
+										<p>
+											Contract address: <a href="https://etherscan.io/address/0xfc81655585F2F3935895C1409b332AB797D90B33" id='contractcode' target="_blank">0xfc81655585F2F3935895C1409b332AB797D90B33</a>
+										</p>
+										<p>
+											<span>Masternode</span>: <span id="masternode">n/a</span>
+										</p>
+									</div>									
+								</form>
+							</div>
+                            <!-- Column -->
+                        </div>
+                    </div>
+                </div>
+                <!-- ============================================================== -->
+                <!-- End Static Slider 10  -->
+                <!-- ============================================================== -->
+                <!-- ============================================================== -->
+                <!-- text  -->
+                <!-- ============================================================== -->
+                <div class="spacer" id="section">
+                    <div class="container">						
+                        <div class="row justify-content-center">
+                            <div class="col-md-6 text-center">								
+                                <div class="row">
+									<div class="col-md-6">
+										<h4 class="title font-bold">Sell tokens</h4>
+										<p class="subtitle">You can currently sell <span id="UserTokens">0 </span> EHT</p>
+										<h5 class="text-center" id='sellPrice'>0 <em class="fab fa-ethereum"></em></h5>
+										<br/>
+									</div>
+									<div class="col-md-6">
+										<h4 class="title font-bold">Currently available</h4>
+										<h5 class="text-center" id="UserTokens"></h5>
+										<p class="subtitle">Ethereum: ~<a id="userestimate">0.0000</a><em class="fab fa-ethereum"></em></p>
+									</div>
+									<div class="col-md-4 col-xs-12">
+										<button class="btn btn-outline-info" id="setMax" onclick="SetMaxSellTokens()" type="button" onclick="return false;" value="Max">Maximum</button>
+									</div>
+									<div class="col-md-4 col-xs-12">
+										<input class="form-control" id="tokenamountsell" type="number" maxlength="12" minlength="1" min="0" max="999999" name="sell-amount" value="0" oninput='UpdateETHAmount()'>
+									</div>
+									<div class="col-md-4 col-xs-12">
+										<button class="btn btn-outline-info" onclick="sell()"><i class="right arrow icon"></i>Sell tokens</button>
+									</div>
+									<div class="col-md-12">
+										<h4 class="title font-bold">You will receive: <a class="approx" id="ethamountsell">0.0000</a> <em class="fab fa-ethereum"></em></h4>
+									</div>
+								</div>
+                            </div>
+							<div class="col-md-1"></div>
+							<div class="col-md-1" style="border-left: 1px rgb(24, 142, 244) solid;"></div>
+							<div class="col-md-4 text-center">
+								<div class="row">
+									<div class="col-md-12 form-group">
+										<h4 class="title font-bold">Transfer your tokens</h4>
+										<p class="subtitle">You can use this form to transfer your EHT tokens to another wallet. Please remember that this action is not reversible!</p>
+									</div>
+									<div class="col-md-6 form-group">
+										<label for="transferAddress">Recipient address</label>
+										<input class="form-control" id="tokenaddress" type="text" name="transferAddress">
+									</div>
+									<div class="col-md-6 form-group">
+										<label for="transferTokenCount">Amount of tokens</label>
+										<input class="form-control" id="tokenamounttransfer" type="number" maxlength="12" minlength="1" min="0" name="transferTokenCount" placeholder="0.00">
+									</div>									
+									<div class="col-md-12 form-group">
+										<br/>
+										<button class="btn btn-outline-info" onclick="transfer()"><i class="right arrow icon"></i>Transfer</button>
+									</div>
+								</div>
+                            </div>
+                        </div>        
+                    </div>    
+                </div>
+                <!-- ============================================================== -->
+                <!-- End text  -->
+                <!-- ============================================================== -->               
+                <!-- ============================================================== -->
+                <!-- Static Slider 10  https://images.unsplash.com/photo-1510681491618-3cb3e5bb6bf6?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=d74992342013404ca92a836845839c53&auto=format&fit=crop&w=1950&q=80 -->
+                <!-- ============================================================== -->				
+                <div class="static-slider10" style="background-image:url(../assets/images/static-slider/slider10/img2.jpg)">
+                    <div class="container">
+                        <!-- Row  -->
+                        <div class="row justify-content-center ">
+                            <!-- Column -->
+                            <div class="col-md-6 align-self-center text-center" data-aos="fade-down" data-aos-duration="1200">
+								<h1 id="yourBalance" class="title">Your profitability</h1>
+								<br/>
+								<h2>So far you have accumulated</h2>
+								<p class="title font-bold text-center"><span id="reinvest">0.0000</span> <em class="fab fa-ethereum"></em></p>
+								<a id="withdraw" onclick="withdraw()" class="col-md-6 btn btn-outline-light btn-rounded btn-md btn-arrow m-t-20" data-toggle="collapse" href=""><span>Withdraw <i class="ti-arrow-right"></i></span></a>
+								<p class="title font-bold text-center"><span id="tokenreinvest">0.00</span> EHT</p>
+								<a id="reinvest" onclick="reinvest()" class="col-md-6 btn btn-outline-light btn-rounded btn-md btn-arrow m-t-20 text-center" data-toggle="collapse" href=""><span>Reinvest <i class="ti-arrow-right"></i></span></a>
+                            </div>
+                            <!-- Column -->
+
+                        </div>
+                    </div>
+                </div>
+                <!-- ============================================================== -->
+                <!-- End Static Slider 10  -->
+                <!-- ============================================================== -->
+                <!-- ============================================================== -->
+                <!-- Static Slider 3  -->
+                <!-- ============================================================== -->
+                <div class="static-slider3">
+                    <div class="container">
+                        <!-- Row  -->
+                        <div class="row justify-content-center ">
+                            <!-- Column -->
+                            <div class="col-md-11 align-self-center text-center" data-aos="fade-right" data-aos-duration="1200">
+                                <h1 class="title">Your masternode referral link</h1>
+								<a class="btn btn-outline-info" href="/" id="masternodeLink">null</a>
+                            </div>
+                            <!-- Column -->
+
+                        </div>
+                    </div>
+                </div>
+                <!-- ============================================================== -->
+                <!-- End Static Slider 3  -->
+                <!-- ============================================================== -->
+                <!-- ============================================================== -->
+                <!-- Form 1  -->
+                <!-- ============================================================== -->
+                <div class="bg-light">
+                    <section>
+                        <div id="banner1" class="banner spacer" style="background-image:url(../assets/images/form-banners/banner1/banner-bg.jpg);">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-7 col-lg-5 align-self-center" data-aos="fade-right" data-aos-duration="1500">
+                                        <h2 id="howWork" class="title font-bold">How does it work?</h2>
+                                        <p class="m-t-40 m-b-30">Our service works as exchange walt for securing your mining assets in form of decentralized fully automated (EHT) token. Token is built to function without any 2nd or 3rd party control. All tokens are visible on main network and traceable for full transparency with no governance or overseeing institution involved.</p>
+					<p class="m-t-40 m-b-30">As for token holder you will earn shared amount of every transformation to EHT token or withdraw that is proportional your token amount vs total tokens in circulation. All fees conducted from any users on the platform are fully paid out to token holders without any fee.</p>
+					<p class="m-t-40 m-b-30">Also to reward active community members whom have atleast 50.00 EHT tokens, we have an lifetime affiliate program were using link you can invite your relatives, friends or event strangers to the platform. For any new users that joins the platform with your referral link you will receive 15% of every investment fees conducted from their investment forever.</p>
+                                    </div>
+                                    <div class="col-md-5 col-lg-6 align-self-center ml-auto" data-aos="fade-left" data-aos-duration="1500">
+                                        <img src="../assets/images/form-banners/banner1/banner-img.png" alt="We are Digital Agency" class="img-fluid" />
+                                    </div>
+                                </div>								
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <!-- ============================================================== -->
+                <!-- End Form 1  -->
+                <!-- ============================================================== -->
+                <!-- ============================================================== -->
+                <!-- text  -->
+                <!-- ============================================================== -->
+                <div class="spacer">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-md-8 text-center">
+                                <h1 id="faq" class="title font-bold">F.A.Q.</h1>
+                                <h6 class="subtitle">On daily basis we receive tons of questions about the platform. Here are some common answers to most of them.</h6>
+								<br/>							
+								
+								<div class="accordion-s2" id="accordion-1">
+									<div class="card animated fadeInUp active" data-animate="fadeInUp" data-delay=".1 animated" style="visibility: visible;">
+										<div class="card-header">
+											<h5>
+												<a data-toggle="collapse" data-target="#collapse-1-1" locale="faq_exact_amounts" class="collapsed" aria-expanded="false">What are the exact fee amounts?</a>
+											</h5>
+										</div>
+										<div id="collapse-1-1" class="collapse show" data-parent="#accordion-1" style="">
+											<div class="card-body">
+												<p locale="faq_exact_amount_a">Input fee: 22% from investment. Included:
+												    <br>&nbsp; - 5% Return to token holders
+												    <br>&nbsp; - 2% Marketing and support costs
+												    <br>&nbsp; - 15% Trade capital fee. Use to do profit on bitmex and pay dividends back, if success. Safe investment style.
+												    <br>
+												    <br>Withdraw fee: 3% from assets
+												    <br>Transfer fee: 1% from value transfered
+												    <br>Referral profit: 15% from guests investment fees (lifetime)<br></p>
+											</div>
+										</div>
+									</div>
+									<div class="card animated fadeInUp" data-animate="fadeInUp" data-delay=".2" style="visibility: visible; animation-delay: 0.2s;">
+										<div class="card-header">
+											<h5>
+												<a class="collapsed" data-toggle="collapse" data-target="#collapse-1-2" locale="faq_how_much">What is Metamask?</a>
+											</h5>
+										</div>
+										<div id="collapse-1-2" class="collapse" data-parent="#accordion-1">
+											<div class="card-body">
+												<p locale="faq_how_much_a">MetaMask is a bridge that allows you to visit the distributed web of tomorrow in your browser today. It allows you to run Ethereum dApps right in your browser without running a full Ethereum node.
+												    <br><br>You can install Metamask here: <a href=https://metamask.io target=_blank>https://metamask.io</a>
+												    <br>Step 2: Click “Add to Chrome” to Install MetaMask as Google Chrome extension.
+												    <br>Step 3: Click “Add Extension” to confirm and MetaMask will be added
+												    <br>You can see that MetaMask is added by the little fox logo that shows up on the top right corner</p>
+											</div>
+										</div>
+									</div>
+									<div class="card animated fadeInUp" data-animate="fadeInUp" data-delay=".3" style="visibility: visible; animation-delay: 0.3s;">
+										<div class="card-header">
+											<h5>
+												<a class="collapsed" data-toggle="collapse" data-target="#collapse-1-3" locale="faq_how_much">How much will I earn?</a>
+											</h5>
+										</div>
+										<div id="collapse-1-3" class="collapse" data-parent="#accordion-1">
+											<div class="card-body">
+												<p locale="faq_how_much_a">All profits are related to amount of ETH you transform in correlation with token market activity. As more and more mining asets are stored into platform you gain certain % of that amount. Also taking in account every withdraw is profitable for you as long as you have tokens.
+												    <br>On bitmex, we pay 50% of profit to contract holders, 25% - manage fee and 25% - reinvest</p>
+											</div>
+										</div>
+									</div>
+									<div class="card animated fadeInUp" data-animate="fadeInUp" data-delay=".4" style="visibility: visible; animation-delay: 0.4s;">
+										<div class="card-header">
+											<h5>
+												<a class="collapsed" data-toggle="collapse" data-target="#collapse-1-4" locale="faq_how_much">Are my assets safe ?</a>
+											</h5>
+										</div>
+										<div id="collapse-1-4" class="collapse" data-parent="#accordion-1">
+											<div class="card-body">
+												<p locale="faq_how_much_a">All your assets are stored 85% on ETH blockchain and have no centralized authority for failure. All token functionality code is visible at and is executed automatically.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+                            </div>
+                        </div>        
+                    </div>    
+                </div>
+                <!-- ============================================================== -->
+                <!-- End text  -->
+                <!-- ============================================================== -->
+            </div>
+            <!-- ============================================================== -->
+            <!-- End Container fluid  -->
+            <!-- ============================================================== -->
+            <!-- ============================================================== -->
+            <!-- Back to top -->
+            <!-- ============================================================== -->
+            <a class="bt-top btn btn-circle btn-lg btn-info" href="#top"><i class="ti-arrow-up"></i></a>
+        </div>
+        <!-- ============================================================== -->
+        <!-- End Page wrapper  -->
+        <!-- ============================================================== -->        
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Wrapper -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- All Jquery -->
+    <!-- ============================================================== -->
+    <script src="../assets/node_modules/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap popper Core JavaScript -->
+    <script src="../assets/node_modules/popper/dist/popper.min.js"></script>
+    <script src="../assets/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!--Custom JavaScript -->
+    <!--<script src="js/custom.min.js"></script> -->
+	<script src="js/custom.js"></script>
+	<script src="js/metamask.js"></script>
+    <!-- ============================================================== -->
+    <!-- This page plugins -->
+    <!-- ============================================================== -->
+    <script type="text/javascript">       
+        
+    </script>
+</body>
+
+</html>
