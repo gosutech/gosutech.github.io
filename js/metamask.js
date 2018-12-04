@@ -148,8 +148,8 @@ var connected = web3.isConnected();
 	    var TokenAddress=document.getElementById("tokenaddress").value;
 	    console.log('amountToken : '+amountToken+' address : '+TokenAddress);
 	    if (!isNaN(amountToken) && amountToken>0){
-		var amountTokenwei=web3.toWei(amountToken,'ether');
-		cI.transfer(TokenAddress,amountTokenwei,function(e,r) {console.log('transfer success!');UserLog(e,r)});
+//		var amountTokenwei=web3.toWei(amountToken,'ether');
+		cI.transfer(TokenAddress,amountToken,function(e,r) {console.log('transfer success!');UserLog(e,r)});
 	    }
 	}
 
