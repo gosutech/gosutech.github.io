@@ -113,7 +113,7 @@ var connected = web3.isConnected();
 	    document.getElementById("balance").innerHTML = User.totalEthereumBalance.toFixed(ethnum);
 //	    document.getElementById("UserBalance").innerHTML = User.balance.toFixed(ethnum)+' ETH';
 	    document.getElementById("UserTokens").innerHTML = User.myTokens.toFixed(toknum);
-	    document.getElementById("buyPrice").innerHTML = User.buyPrice.toFixed(ethnum);
+	    document.getElementById("buyPrice").innerHTML = User.buyPrice.toFixed(ethnum)+' <em class="fab fa-ethereum"></em>';
 	    document.getElementById("sellPrice").innerHTML = User.sellPrice.toFixed(ethnum)+' <em class="fab fa-ethereum"></em>';
 	    document.getElementById("userestimate").innerHTML = User.ethequity.toFixed(ethnum);
 //	    document.getElementById("debug").innerHTML='';
