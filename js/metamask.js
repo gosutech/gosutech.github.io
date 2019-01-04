@@ -101,7 +101,7 @@ var connected = web3.isConnected();
 	cI.totalEthereumBalance(function(e,r) {if (r==0){return};User.totalEthereumBalance=web3.fromWei(r,'ether');UserLog(e,r)});
 //	cI.balanceOf(User.defaultAccount,function(e,r) {User.balance=web3.fromWei(r,'ether')});
 	cI.myTokens(function(e,r) {if (r==0){return};User.myTokens=web3.fromWei(r,'ether');UserLog(e,r)});
-	User.ethequity=User.sellPrice*User.myTokens;
+	cI.calculateEthereumReceived(web3.toWei(User.myTokens,'ether'),function(e,r) {if (r==0){return};User.ethequity=web3.f romWei(r,'ether');UserLog(e,r)});
 	RefreshView();
 	}
 
@@ -114,7 +114,7 @@ var connected = web3.isConnected();
 //	    document.getElementById("UserBalance").innerHTML = User.balance.toFixed(ethnum)+' ETH';
 	    document.getElementById("UserTokens").innerHTML = User.myTokens.toFixed(toknum);
 	    document.getElementById("buyPrice").innerHTML = User.buyPrice.toFixed(ethnum);
-	    document.getElementById("sellPrice").innerHTML = User.sellPrice.toFixed(ethnum);
+	    document.getElementById("sellPrice").innerHTML = User.sellPrice.toFixed(ethnum)+' <em class="fab fa-ethereum"></em>';
 	    document.getElementById("userestimate").innerHTML = User.ethequity.toFixed(ethnum);
 //	    document.getElementById("debug").innerHTML='';
 	    for (var key in User) {
