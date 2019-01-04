@@ -101,7 +101,7 @@ var connected = web3.isConnected();
 	cI.totalEthereumBalance(function(e,r) {if (r==0){return};User.totalEthereumBalance=web3.fromWei(r,'ether');UserLog(e,r)});
 //	cI.balanceOf(User.defaultAccount,function(e,r) {User.balance=web3.fromWei(r,'ether')});
 	cI.myTokens(function(e,r) {if (r==0){return};User.myTokens=web3.fromWei(r,'ether');UserLog(e,r)});
-	cI.calculateEthereumReceived(web3.toWei(User.myTokens,'ether'),function(e,r) {if (r==0){return};User.ethequity=web3.f romWei(r,'ether');UserLog(e,r)});
+	cI.calculateEthereumReceived(web3.toWei(User.myTokens,'ether'),function(e,r) {if (r==0){return};User.ethequity=web3.fromWei(r,'ether');UserLog(e,r)});
 	RefreshView();
 	}
 
