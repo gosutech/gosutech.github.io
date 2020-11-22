@@ -18,6 +18,6 @@
 * [✓] 100% clean and transparent, no backdoor, no cheat - 100% 투명하고 깨끗함
 
 ## Disclaimer(면제조항) 
-All revenue is based on the performance of the Crystal Token's trading bot and the volume of the platform. As the performance of the bot improves, more and more assets are put into the platform and share revenue according to a percentage of the user's tokens holdings. Thus it can be more profitable as the Crystal Token project grows and the volume of the platform increases. However, we **do not promise** any **_principal_** guarantees or scheduled **_earnings_**.
+All revenue is based on the participation of ethedge platform and performance of the other projects of our choice. As ethedge grows, more and more assets are utilized to generate profits and feed them to the platform and share revenue according to a percentage of the user's tokens holdings. Thus it can be more profitable as the volume of the platform increases and other proejcts perform well. However, we **do not promise** any **_principal_** guarantees or scheduled **_earnings_**.
 
-모든 수익은 크리스탈 토큰의 봇의 성능과 플랫폼의 볼륨과 연관됩니다. 봇의 성능이 개선될수록 점점 더 많은 자산이 플랫폼에 투입되어 사용자가 보유한 헤지토큰의 일정 비율에 따라 수익을 공유하게 되므로, 크리스탈 토큰 프로젝트가 발전하고 플랫폼의 볼륨이 증가할수록 수익성이 높아질 수 있습니다. 하지만 _원금보장_이나 _고정수익_을 **약속하지 않습니다**.
+모든 수익은 이더헷지 플랫폼의 참여도와 우리가 선택한 다른 플랫폼의 성능에 기반합니다. 이더헤지가성장하면서 점점 더 많은 자산이 수익 창출을 위해 사용되며 생성된 수익이 다시 플랫폼에 투입되어 사용자가 보유한 헤지토큰의 일정 비율에 따라 수익을 공유하게 되므로, 이더헷지 플랫폼의 볼륨이 증가할수록 수익성이 높아질 수 있습니다. 하지만 _원금보장_이나 _고정수익_을 **약속하지 않습니다**.
